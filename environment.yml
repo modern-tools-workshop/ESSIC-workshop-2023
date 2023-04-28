@@ -11,9 +11,8 @@ dependencies:
   - cartopy=0.20
   - pandas=1.4.2
   - s3fs=2022.5.0
-  - dask=2022.7
+  - dask
   - xarray=0.20.1
   - dask=2022.12.1
   - h5netcdf
   - pykdtree
-  - gdal
