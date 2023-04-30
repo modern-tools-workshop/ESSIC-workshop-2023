@@ -4,7 +4,7 @@ Instructor: [Rebekah Esmaili](http://www.rebekahesmaili.com), PhD
 
 ---
 
-A crash course in Python focusing on reading and visualizing data-sets used in Earth sciences.
+A crash course in Python focusing on reading and visualizing data sets used in Earth sciences.
 
 This code is interactive! Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/modern-tools-workshop/ESSIC-workshop-2023/HEAD)
 
@@ -25,14 +25,15 @@ This workshop will cover:
 
 ### Installation Requirements
 
-"I am really new to Python!"
+"I am  new to Python and just want to learn!"
 
-* I recommend launching binder, which is a "cloud version" of this course. No installation required! [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/modern-tools-workshop/ESSIC-workshop-2023/HEAD)
+* I recommend launching Binder, an online service that shares a "cloud version" of this course. No installation required! [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/modern-tools-workshop/ESSIC-workshop-2023/HEAD)
     * Need help with Binder? Video tutorial on [YouTube](https://youtu.be/3BrfFe4HsAw).
+* Best option if you are a Python tourist!
 
-"I have used Python before!"
+"I want to start using Python in my research!"
 
-* If you wish to run the examples locally, I recommend installing [Anaconda](https://www.anaconda.com/products/individual). If you are having trouble with your installation, contact the instructor before the course or use binder.
+* If you wish to run the examples locally, I recommend installing [Anaconda](https://www.anaconda.com/products/individual). If you are having trouble with your installation, contact the instructor before the course or use Binder.
     * Need help installing Anaconda? Video tutorial on [YouTube](https://youtu.be/zxSQCXXvOIM).
 * Download the contents of this GitHub repository to your computer.
 * Launch Jupyter Notebooks from the Anaconda Navigator. This will open a window in your default browser. Navigate to the folder that contains the notebooks (*.ipynb) and click on the tutorial for the day.
@@ -52,10 +53,12 @@ This workshop will cover:
     ```
   * Note: The default environment is called 'base.' If you close the terminal, you will have to switch back to the environment using the above command again.
 
-I *do not* recommend:
-* Using Python on a remote server for this tutorial (I cannot help troubleshoot)
-* Using your operating system's Python or a shared Python installations unless you are advanced!
+I *do not* recommend using the following: 
+* Python on a remote server for this tutorial
+* Your operating system Python
+* Shared Python installations
 
+Given that participants have a lot of different operating systems and versions of Python, it's best if we're all using the same tools. If you *really* want to do one of the above, I recommend making a new environment using the environment.yml file.
 ---
 ## Course Philosophy
 
