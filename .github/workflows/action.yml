@@ -1,8 +1,6 @@
 name: 'Trigger-Binder-build'
 on:
   push:
-    branches:
-      - HEAD
 
 jobs:
   trigger-binder-build:
