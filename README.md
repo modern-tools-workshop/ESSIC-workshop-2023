@@ -4,7 +4,7 @@ Instructor: [Rebekah Esmaili](http://www.rebekahesmaili.com), PhD
 
 ---
 
-A crash course in Python focusing on reading and visualizing data sets used in Earth sciences.
+A crash course in Python focusing on reading and visualizing data sets used in the Earth sciences.
 
 This code is interactive! Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/modern-tools-workshop/ESSIC-workshop-2023/HEAD)
 
@@ -30,6 +30,13 @@ This workshop will cover:
 * I recommend launching Binder, an online service that shares a "cloud version" of this course. No installation required! [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/modern-tools-workshop/ESSIC-workshop-2023/HEAD)
     * Need help with Binder? Video tutorial on [YouTube](https://youtu.be/3BrfFe4HsAw).
 * Best option if you are a Python tourist!
+
+With Binder, everything is pre-installed and will open in JupyterLab. No installation or login required! There are some limitations to using Binder:
+
+* Startup can take anywhere from 30 seconds to 30 minutes, depending on when it was last built
+* Sessions expire with 10 minutes of inactivity
+* Data does not persist between sessions (this is for learning only, you'll have to install python locally to code on your own)
+* Limited to 100 simultaneous users per session
 
 "I want to start using Python in my research!"
 
@@ -58,7 +65,10 @@ I *do not* recommend using the following:
 * Your operating system Python
 * Shared Python installations
 
+
 Given that participants have a lot of different operating systems and versions of Python, it's best if we're all using the same tools. If you *really* want to do one of the above, I recommend making a new environment using the environment.yml file.
+
+
 ---
 ## Course Philosophy
 

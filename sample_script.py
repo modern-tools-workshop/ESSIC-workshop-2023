@@ -8,7 +8,7 @@ from netCDF4 import Dataset
 from cartopy import crs as ccrs
 
 # Open file
-fname='data/JRR-AOD_v2r3_j01_s202009152044026_e202009152045271_c202009152113150_thinned.nc'
+fname='data/JRR-AOD_v2r3_j01_s202304220518119_e202304220519346_c202304220600390.nc'
 aod_file_id = Dataset(fname)
 
 # Import variables

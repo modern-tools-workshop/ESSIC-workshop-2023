@@ -31,8 +31,8 @@ hour = '20'
 product = 'ABI-L2-SSTF'
 fname = 'OR_ABI-L2-SSTF-M6_G18_s20231122000211_e20231122059519_c20231122105091.nc'
 
-data_path = bucket + '/' + product + '/'  + str(year) + '/' + julian + '/' + str(hour).zfill(2)
-match = data_path + '/' + fname
+files_path = bucket + '/' + product + '/'  + str(year) + '/' + julian + '/' + str(hour).zfill(2)
+match = files_path + '/' + fname
 
 fs.get(match, str(directory_path) + subdir + fname)
 
@@ -46,8 +46,8 @@ hour = '18'
 product = 'ABI-L2-RSRF'
 fname = 'OR_ABI-L2-RSRF-M6_G16_s20231121800204_e20231121809512_c20231121859124.nc'
 
-data_path = bucket + '/' + product + '/'  + str(year) + '/' + julian + '/' + str(hour).zfill(2)
-match = data_path + '/' + fname
+files_path = bucket + '/' + product + '/'  + str(year) + '/' + julian + '/' + str(hour).zfill(2)
+match = files_path + '/' + fname
 
 fs.get(match, str(directory_path) + subdir + fname)
 
@@ -96,7 +96,6 @@ data = { 'Lon' : lons, 'Lat' : lats, 'brt_I04(K)' : brt, 'frp(MW)' : frp }
 
 df = pd.DataFrame(data=data)
 df.to_csv('data/VIIRS_AF_j01_s202304220518119_e202304220519346.csv', index=False)
-
 
 # VIIRS L1
 bucket = 'noaa-nesdis-n20-pds'
