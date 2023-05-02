@@ -22,6 +22,7 @@ fs = s3fs.S3FileSystem(anon=True)
 
 # Download GOES-16 datasets -----------------------------------------------
 # SST
+
 bucket = 'noaa-goes18'
 year = 2023
 month = 4
@@ -34,6 +35,7 @@ fname = 'OR_ABI-L2-SSTF-M6_G18_s20231122000211_e20231122059519_c20231122105091.n
 files_path = bucket + '/' + product + '/'  + str(year) + '/' + julian + '/' + str(hour).zfill(2)
 match = files_path + '/' + fname
 
+print("Downloading " + product)
 fs.get(match, str(directory_path) + subdir + fname)
 
 # RSR
@@ -49,6 +51,7 @@ fname = 'OR_ABI-L2-RSRF-M6_G16_s20231121800204_e20231121809512_c20231121859124.n
 files_path = bucket + '/' + product + '/'  + str(year) + '/' + julian + '/' + str(hour).zfill(2)
 match = files_path + '/' + fname
 
+print("Downloading " + product)
 fs.get(match, str(directory_path) + subdir + fname)
 
 # Download JPSS datasets -----------------------------------------------
@@ -66,6 +69,7 @@ fname = 'JRR-AOD_v2r3_j01_s202304220518119_e202304220519346_c202304220600390.nc'
 files_path = bucket + '/' + satellite + '/' + sensor + '/' + product + '/' + str(year) + '/' + str(month).zfill(2) + '/' + str(day).zfill(2)
 match = files_path + '/' + fname
 
+print("Downloading " + product)
 fs.get(match, str(directory_path) + subdir + fname)
 
 # Active Fire
@@ -81,6 +85,7 @@ fname = 'AF-Iband_v1r1_j01_s202304220518119_e202304220519346_c202304220557358.nc
 files_path = bucket + '/' + satellite + '/' + sensor + '/' + product + '/' + str(year) + '/' + str(month).zfill(2)  + '/' + str(day).zfill(2)
 match = files_path + '/' + fname
 
+print("Downloading " + product)
 fs.get(match, str(directory_path) + subdir + fname)
 
 # Reformat into a text document for learning purposes
@@ -108,4 +113,5 @@ fname = 'SVM16_j01_d20230422_t0516461_e0518106_b28103_c20230422055438143201_oeac
 files_path = bucket + '/' + product + '/' + str(year) + '/' + str(month).zfill(2)  + '/' + str(day).zfill(2)
 match = files_path + '/' + fname
 
+print("Downloading " + product)
 fs.get(match, str(directory_path) + subdir + fname)
