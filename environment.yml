@@ -13,5 +13,5 @@ dependencies:
   - cartopy
   - pandas
   - s3fs
-  - dask
+  # - dask
   - xarray
